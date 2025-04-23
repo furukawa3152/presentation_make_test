@@ -14,11 +14,37 @@ style: |
   h2 {
     color: #34495e;
   }
+  section.background {
+    background: url('images/hiramatsu.jpg') center/cover;
+  }
+  .background-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .image-container {
+    text-align: center;
+  }
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
 ---
+
+<!-- _class: background -->
+<div class="background-content">
 
 # 病院内でのローカル LLM 活用
 
 ## ～安全・効率的な医療サービスの実現に向けて～
+
+</div>
 
 ---
 
@@ -80,12 +106,26 @@ style: |
 
 # 5. 導入ステップ
 
+<div class="columns">
+
+<div class="image-container">
+
+![導入ステップの図](images/flow.png)
+
+</div>
+
+<div>
+
 1. 要件定義
 2. システム設計
 3. データ準備
 4. モデル学習
 5. テスト運用
 6. 本番展開
+
+</div>
+
+</div>
 
 ---
 
