@@ -4,7 +4,8 @@
   "description": "Presentation about local LLM usage in hospitals",
   "scripts": {
     "start": "marp -s .",
-    "build": "marp presentation.md -o presentation.pdf"
+    "build": "marp presentation.md -o presentation.pdf",
+    "build:pptx": "marp --allow-local-files --pptx --html presentation.md -o presentation.pptx"
   },
   "dependencies": {
     "@marp-team/marp-cli": "^2.5.0"
